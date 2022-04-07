@@ -18,5 +18,79 @@
 </head>
 <body>
     
+    <nav>
+
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="#" class="nav-item__logo">devfinder</a>
+            </li>
+            <li class="nav-item">
+                <button class="button-element button--bg_transparent">
+                    <span class="button-element__title">light</span> 
+                    <img src="./images/icon-sun.svg" alt="dark/white theme" class="nav-item-button__icon">
+                </button>
+            </li>
+            <li class="nav-item">
+                <div class="search-form search-form--bg_content">
+                    <label for="searchInput" class="search-form__label">
+                        <img src="./images/icon-search.svg" alt="search" class="search-form__icon">
+                    </label>
+                    <input type="text" placeholder="Search GitHub username..." id="searchInput" class="search-form__input">
+                    <button class="search-form__button-submit button-element">Search</button>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <div class="profile-container">
+
+            <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="" class="profile-image">
+            <div class="profile-user-info">
+                <div class="profile-username">
+                    <h1 class="profile-username__name">The Octocat</h1>
+                    <h3 class="profile-username__user">@octocat</h3>
+                </div>
+                <p class="profile-user-info__registration-date">Joined 25 Jan 2011</p>
+            </div>
+            <p class="profile-biography">
+                This profile has no bio
+            </p>
+            <div class="profile-stats">
+                <p class="profile-stats__repos">Repos<br> <span class="profile-stats__number-repos">8</span></p>
+                <p class="profile-stats__followers">Followers<br> <span class="profile-stats__number-followers">3938</span></p>
+                <p class="profile-stats__following">Following <br> <span class="profile-stats__number-following">9</span></p>
+            </div>
+            <div class="profile-contact">
+                <p class="profile-contact__item">
+                    <img src="./images/icon-location.svg" alt="Location" class="profile-contact__item-icon"> San Francisco
+                </p>
+                <p class="profile-contact__item">
+                    <img src="./images/icon-twitter.svg" alt="Twitter" class="profile-contact__item-icon"> Not available
+                </p>
+                <p class="profile-contact__item">
+                    <img src="./images/icon-website.svg" alt="Website" class="profile-contact__item-icon"> https://github.blog
+                </p>
+                <p class="profile-contact__item">
+                    <img src="./images/icon-company.svg" alt="Company" class="profile-contact__item-icon"> @github
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="attribution-container">
+        <div class="attribution">
+          Challenge by 
+          <a href="https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6" 
+            target="_blank" 
+            class="attribution__link">
+            Frontend Mentor
+          </a>. 
+          Coded by 
+          <a href="https://github.com/edalguerr" class="attribution__link">@edalguerr</a>.
+        </div>
+    </footer>
 </body>
 </html>
