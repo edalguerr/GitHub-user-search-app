@@ -1,0 +1,24 @@
+:root{
+
+    /* FONT */
+    --font-family: 'Space Mono', monospace;
+    
+    /* COLORS */
+
+    /* Background */
+    --bg-container: #F6F8FF;
+    --bg-content: #FEFEFE;
+
+    /* Text */
+    --text: #4B6A9B;
+    --text-alt: #2B3442;
+
+    /* Button */
+    --btn: #0079FF;
+    --btn-hover: #60ABFF;
+
+    /* Others */
+    --shadow-active: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    --shadow-inactive: 0px 16px 30px -10px rgba(0,0,0,0.2);
+    --icon-bg: brightness(100%);
+}
