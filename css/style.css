@@ -2,7 +2,9 @@
 
     /* FONT */
     --font-family: 'Space Mono', monospace;
-    
+    --font-size: 15px;
+    --font-weight-bold: 700;
+
     /* COLORS */
 
     /* Background */
@@ -21,4 +23,128 @@
     --shadow-active: 0px 4px 4px 0px rgba(0,0,0,0.25);
     --shadow-inactive: 0px 16px 30px -10px rgba(0,0,0,0.2);
     --icon-bg: brightness(100%);
+    --width-container: 50vw;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background: var(--bg-container);
+}
+
+
+.page-container {
+    width: var(--width-container);
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    width: fit-content;
+}
+
+.nav-item--width_100 {
+    width: 100%;
+}
+
+.nav-item__logo {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+    color: var(--text);
+}
+
+
+.button-element {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    font-family: inherit;
+    width: 120px;
+    height: 45px;
+    color: #fff;
+    border: 0;
+    border-radius: 12px;
+    background: var(--btn);
+}
+
+.button-element:hover {
+    cursor: pointer;
+    background: var(--btn-hover);
+}
+
+.button--bg_transparent {
+    width: fit-content;
+    background: transparent;
+    color: var(--text);
+}
+
+.button--bg_transparent:hover {
+    background: transparent;
+}
+
+.button-element__title {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+}
+
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px 10px 25px;
+    border-radius: 20px;
+    background: var(--bg-content);
+    box-shadow: var(--shadow-active);
+}
+
+.search-form__label {
+    display: flex;
+    width: fit-content;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-form__input {
+    width: 80%;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 0;
+    color: var(--text);
+}
+
+.search-form__input:focus {
+    outline: none;
+}
+
+.search-form__button-submit {
+    display: inline;
+}
+
+
+.profile-container {
+    
+}
+
+
+.attribution-container {
+    
 }
