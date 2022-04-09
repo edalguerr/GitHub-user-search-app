@@ -29,7 +29,7 @@
 
 body {
     display: flex;
-    min-height: 100vh;
+    min-height: 90vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@ body {
 
 
 .page-container {
-    width: var(--width-container);
+    max-width: var(--width-container);
 }
 
 
@@ -245,13 +245,136 @@ body {
     position: absolute;
     text-align: center;
     bottom: 10px;
+    color: var(--text);
 }
 
-@media only screen and (max-width: 1390px) {
+.attribution__link {
+    text-decoration: none;
+    color: var(--text-alt);
+}
+
+@media only screen and (max-width: 1400px) {
     .attribution-container {
         width: 100%;
         position: relative;
         text-align: center;
         bottom: -50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {   
+    :root {
+        --width-container: 70vw;        
+    }
+
+
+    body {
+        min-height: 80vh;
+    }
+    
+
+    .profile-container {
+        grid-template-columns: 30% 31.5% 31.5%;
+        gap: 1.5% 4%;        
+    }
+
+
+    .profile-image {
+        grid-row: 1 / span 1;
+    }
+
+
+    .profile-biography {
+        grid-column: 1 / span 3;
+    }
+     
+
+    .profile-stats {
+        grid-column: 1 / span 3;
+    }
+
+ 
+
+    .profile-user-info {
+        flex-direction: column;
+        justify-content: center;
+        grid-column: 2 / span 2;
+    }
+
+
+    .profile-username {
+        width: 100%;
+    }
+
+
+    .profile-user-info__registration-date {
+        width: 100%;
+        text-align: left;
+    }
+
+
+    .profile-contact {
+        margin: 12px 0 30px;
+        grid-column: 1 / span 3;
+    }
+
+    .profile-contact__item {
+        width: 45%;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {    
+    :root {
+        --width-container: 90vw;        
+    }
+
+    body {
+        min-height: 80vh;
+    }
+
+
+    .search-form__input {
+        font-size: 0.8rem;
+    }
+
+    .profile-container {
+        padding: 25px;
+    }
+
+
+    .profile-username__name {
+        font-size: 1.1rem;
+    }
+
+    .profile-username__user {
+        font-size: 0.9rem;
+    }
+
+    .profile-user-info__registration-date {
+        margin: 8px 0;
+        font-size: 0.9rem;
+    }
+
+
+    .profile-biography {
+        font-size: 0.9rem;
+    }
+
+
+    .profile-stats__stat {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .profile-stats__number {
+        display: inline-block;
+        margin-top: 0.55rem;
+        font-size: 1.1rem;
+    }
+
+    .profile-contact__item {
+        width: 100%;
+        font-size: 0.9rem;
     }
 }
