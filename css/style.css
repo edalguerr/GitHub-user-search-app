@@ -29,8 +29,10 @@
 
 body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: var(--font-family);
     font-size: var(--font-size);
     background: var(--bg-container);
@@ -51,6 +53,7 @@ body {
     padding: 0;
     list-style: none;
 }
+
 
 .nav-item {
     width: fit-content;
@@ -141,10 +144,114 @@ body {
 
 
 .profile-container {
-    
+    display: grid;    
+    padding: 35px;
+    grid-template-columns: 20% 75%;
+    column-gap: 5%;
+    border-radius: 15px;
+    background: var(--bg-content);
+    box-shadow: var(--shadow-active);
+}
+
+.profile-image {
+    width: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    border-radius: 50%;
+}
+
+.profile-user-info {
+    display: flex;
+    grid-column: 2 / span 1;
+}
+
+
+.profile-username {
+    width: 50%;
+}
+
+.profile-username__name {
+    margin-top: 0;
+    margin-bottom: 0;    
+    font-size: 1.6rem;
+    color: var(--text-alt);
+}
+
+.profile-username__user {
+    margin: 0;
+    font-weight: normal;
+    color: var(--btn);    
+}
+
+.profile-user-info__registration-date {
+    width: 50%;
+    text-align: center;
+    color: var(--text);
+}
+
+
+.profile-biography {
+    grid-column: 2 / span 1;
+    color: var(--text);
+}
+
+
+.profile-stats {
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 2 / span 1;
+    border-radius: 15px;
+    background: var(--bg-container);
+}
+
+
+.profile-stats__stat {
+    width: 20%;
+    color: var(--text);
+}
+
+.profile-stats__number {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-alt);
+}
+
+
+.profile-contact {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2 / span 1;
+    column-gap: 8%;
+    margin-top: 30px
+}
+
+.profile-contact__item {
+    width: 46%;
+    margin: 5px 0;
+    color: var(--text);
+}
+
+.profile-contact__item--disabled {
+    opacity: 0.5;
+}
+
+.profile-contact__item-icon {
+    padding-right: 4px;
 }
 
 
 .attribution-container {
-    
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+}
+
+@media only screen and (max-width: 1390px) {
+    .attribution-container {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        bottom: -50px;
+    }
 }
