@@ -39,6 +39,16 @@ body {
 }
 
 
+.theme_dark {
+    /* Background */
+    --bg-container: #141D2F;
+    --bg-content: #1E2A47;
+
+    /* Text */
+    --text: #fff;
+    --text-alt: #fff;
+}
+
 .page-container {
     max-width: var(--width-container);
 }
@@ -90,7 +100,7 @@ body {
 }
 
 .button--bg_transparent {
-    width: fit-content;
+    width: 89px;
     background: transparent;
     color: var(--text);
 }
@@ -131,6 +141,7 @@ body {
     font-family: inherit;
     font-size: 1rem;
     border: 0;
+    background: transparent;
     color: var(--text);
 }
 
@@ -250,8 +261,31 @@ body {
 
 .attribution__link {
     text-decoration: none;
-    color: var(--text-alt);
+    color: var(--btn);
 }
+
+/* TRANSITION FOR CHANGE THEME */
+
+body, 
+.nav-item__logo,
+.button--bg_transparent,
+.search-form,
+.search-form__input,
+.profile-container,
+.profile-username__name,
+.profile-user-info__registration-date,
+.profile-biography,
+.profile-stats,
+.profile-stats__stat,
+.profile-stats__number,
+.profile-contact__item,
+.attribution-container,
+.attribution__link {
+    transition: .3s ease all;
+}
+
+
+/* RESPONSIVE */
 
 @media only screen and (max-width: 1400px) {
     .attribution-container {
