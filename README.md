@@ -2,6 +2,8 @@
 
 This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+![Design preview for the GitHub user search app coding challenge](./images/design.jpg)
+
 ## Table of content
 
 - [Overview](#overview)
