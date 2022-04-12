@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Github user search app</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +26,9 @@
                     <a href="#" class="nav-item__logo">devfinder</a>
                 </li>
                 <li class="nav-item">
-                    <button class="button-element button--bg_transparent">
-                        <span class="button-element__title">Dark</span>
-                        <img src="./images/icon-moon.svg" alt="dark/white theme" class="nav-item-button__icon">
+                    <button class="button-element button--bg_transparent" id="buttonTheme">
+                        <span class="button-element__title" id="buttonThemeTitle">Dark</span>
+                        <img src="./images/icon-moon.svg" alt="dark/white theme" class="nav-item-button__icon" id="buttonThemeIcon">
                     </button>
                 </li>
                 <li class="nav-item nav-item--width_100">
@@ -39,7 +38,7 @@
                         </label>
                         <input type="text" placeholder="Search GitHub username..." id="searchInput"
                             class="search-form__input">
-                        <button class="search-form__button-submit button-element">Search</button>
+                        <button class="search-form__button-submit button-element" id="buttonSearch">Search</button>
                     </div>
                 </li>
             </ul>
@@ -48,39 +47,40 @@
         <main>
             <div class="profile-container">
 
-                <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="" class="profile-image">
+                <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="" class="profile-image" id="avatarimage">
                 <div class="profile-user-info">
                     <div class="profile-username">
-                        <h1 class="profile-username__name">The Octocat</h1>
-                        <h3 class="profile-username__user">@octocat</h3>
+                        <h1 class="profile-username__name" id="profileName">The Octocat</h1>
+                        <h3 class="profile-username__user" id="userName">@octocat</h3>
                     </div>
-                    <p class="profile-user-info__registration-date">Joined 25 Jan 2011</p>
+                    <p class="profile-user-info__registration-date" id="registrationDate">Joined 25 Jan 2011</p>
                 </div>
-                <p class="profile-biography">
+                <p class="profile-biography" id="biography">
                     This profile has no bio
                 </p>
                 <div class="profile-stats">
-                    <p class="profile-stats__stat">Repos<br> <span class="profile-stats__number">8</span></p>
+                    <p class="profile-stats__stat">Repos<br> <span class="profile-stats__number" id="repos">8</span></p>
                     <p class="profile-stats__stat">Followers<br> <span
-                            class="profile-stats__number">3938</span></p>
+                            class="profile-stats__number" id="followers">3938</span></p>
                     <p class="profile-stats__stat">Following <br> <span
-                            class="profile-stats__number">9</span></p>
+                            class="profile-stats__number" id="following">9</span></p>
                 </div>
                 <div class="profile-contact">
                     <p class="profile-contact__item">
-                        <img src="./images/icon-location.svg" alt="Location" class="profile-contact__item-icon"> San
-                        Francisco
+                        <img src="./images/icon-location.svg" alt="Location" class="profile-contact__item-icon">
+                        <span id="location"> San Francisco</span>
                     </p>
                     <p class="profile-contact__item profile-contact__item--disabled">
-                        <img src="./images/icon-twitter.svg" alt="Twitter" class="profile-contact__item-icon"> Not
-                        available
+                        <img src="./images/icon-twitter.svg" alt="Twitter" class="profile-contact__item-icon"> 
+                        <span id="twitter"> Not available</span> 
                     </p>
                     <p class="profile-contact__item">
                         <img src="./images/icon-website.svg" alt="Website" class="profile-contact__item-icon">
-                        https://github.blog
+                        <span id="website">https://github.blog</span>                        
                     </p>
                     <p class="profile-contact__item">
-                        <img src="./images/icon-company.svg" alt="Company" class="profile-contact__item-icon"> @github
+                        <img src="./images/icon-company.svg" alt="Company" class="profile-contact__item-icon">
+                        <span id="company"> @github</span> 
                     </p>
                 </div>
 
